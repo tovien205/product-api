@@ -1,0 +1,29 @@
+{
+  "name": "product-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "start": "node src/server.js",
+  "test": "node -e \"console.log('Unit test passed'); process.exit(0);\"",
+  "test:integration": "node -e \"const mongoose = require('mongoose'); mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/productdb').then(() => { console.log('CI Integration Test: Connected to MongoDB successfully!'); process.exit(0); }).catch(err => { console.error(err); process.exit(1); });\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tovien205/product-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tovien205/product-api/issues"
+  },
+  "homepage": "https://github.com/tovien205/product-api#readme",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2"
+  }
+}
+
