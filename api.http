@@ -3,8 +3,8 @@ POST http://localhost:3000/api/products
 Content-Type: application/json
 
 {
-  "pid": "P001",
-  "pname": "Laptop",
+  "pid": "P003",
+  "pname": "Laptop Demo",
   "price": 15000000,
   "quantity": 10
 }
